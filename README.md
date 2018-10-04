@@ -1,2 +1,2 @@
-# sams
-Stetis Attendance Management System
+# Blubic
+Student Management System
