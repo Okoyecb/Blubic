@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SAMS- Admin Dashboard</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+        <!-- Bootstrap & Fontawesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+        <!-- <link href="Assets/plugins/Calendar/calendar.css" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700"> -->
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    </head>
+    <body>
+        <style>
+            .dashboard{
+                font-size: 14px !important;
+                font-family:Khula;
+                font-weight: bold;
+                color: #FFFFFF;
+                line-height: normal;
+            }
+            .school{
+              font-size: 13px;
+              font-family: Khula;
+              font-weight: bold;
+            }
+            .dust{
+                height: 70px;
+                width: 260px !important;
+                background-color: #FFFFFF;
+            }
+
+            .btn-touchy{
+                background-color: #FFFFFF;
+            }
+
+           .btn:focus,.btn:active {
+                outline: none !important;
+                box-shadow: none;
+               }
+
+               .trouble{
+                   margin-top: -40px !important;
+               }
+
+               .reports::after{
+                   margin-left: 40px !important;
+               }
+              
+        </style>
+        <main>
+            <div class="hide">
+                <div class="row justify-content-start">
+                    <!-- Start side menu -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                        <header class="dust">
+                                <div class="dropdown">
+                                        <button class="btn btn-touchy dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <img src="img/Group 22.svg"> <Span class="school">&nbsp; HandMaid's International</Span>
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                          <button class="dropdown-item" type="button">Holy Infant College</button>
+                                          <button class="dropdown-item" type="button">Great Delight Schools</button>
+                                          <button class="dropdown-item" type="button">Something else here</button>
+                                        </div>
+                                      </div>
+                            <div class="logo ">
+                                <nav class="navbar navbar-expand-lg bg-transparent">
+                                       
+                                    
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="text-white fa fa-bars"></span>
+                                    </button>
+                                </nav>
+                                
+                            </div>
+                        </header>
+                        <div class="trouble" >
+                            <ul class=" navbar-nav list-group mt-4e">
+                                 <a href="dashboard.html" class="list-group-item side-menu-item active text-white border-0">
+                                    <img src="img/Group (7).svg" alt="" class="dashboard pr-3"><span class="dashboard">Dashboard</span>
+                                 </a>
+                                
+                                 <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports lol text-white" href="#" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/Group (2).svg" alt="" class=" dashboard pr-3">
+                                       <span class="dashboard"> Students</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+
+                                    <li class="dropdown list-none side-menu-item">
+                                        <a class="nav-link dropdown-toggle reports text-white" href="#" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                            <img src="img/teacher-pointing-blackboard.svg" alt="" class=" dashboard pr-3">
+                                           <span class="dashboard">Employees</span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                            <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
+                                        </div>
+                                    </li>
+
+                                
+                                 <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/parents.svg" alt="" class="dashboard pr-3"><span class="dashboard">Guardian</span>
+                                 </a>
+                                
+                                 <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="#" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/list.svg" alt="" class=" dashboard pr-3">
+                                       <span class="dashboard">Attendance</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="#">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="#" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/Group (3).svg" alt="" class=" dashboard pr-3">
+                                       <span class="dashboard">Finance</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+                                <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                <img src="img/Group (2).svg" alt="" class="dashboard pr-3"><span class="dashboard">Subject</span>
+                                </a>
+                                <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                <img src="img/Vector (2).svg" alt="" class="dashboard pr-3"><span class="dashboard">Batches</span>
+                                </a>
+                            
+                                <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                <img src="img/Vector (3).svg" alt="" class="dashboard pr-3"><span class="dashboard">Report Card</span>
+                                </a>
+                                <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                <img src="img/Group (5).svg" alt="" class="dashboard pr-3"><span class="dashboard">SMS</span>
+                                </a>
+                            
+                                <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="#" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/Group (6).svg" alt="" class=" dashboard pr-3">
+                                       <span class="dashboard">Events</span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="#">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Attendance Summary Report </a>
+                                    </div>
+                                </li><hr>
+                                <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="#" alt="" class="dashboard pr-3"><span class="dashboard">Settings</span>
+                                    </a>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- end side menu -->
+                    <!-- start side content -->
+                    <div class="col-lg-9">
+                        <header>
+                            <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                                <a class="navbar-brand blue-color" href="#"> </a>
+                                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars text-white"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                        
+                                        
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0 mr-5">
+                                        
+                                        <li class="nav-item dropdown list-none">
+                                            <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                             Ukauwa David  <img src="img/Ellipse.svg" alt="..." class="rounded-circle"> 
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="single_employee.html"><img src="img/profile.svg" alt="" height="20px">  Profile Settings</a><hr>
+                                                <a class="dropdown-item" href="dashboard.html" style="background-color:#1583C7"><img src="img/logout.svg" alt="" height="20px"> <span class="text-white">Logout</span></a>
+                        
+                                            </div>
+                                        </li>
+                                    </form>
+                                </div>
+                            </nav>
+                        </header>
+                        <main class="element-wrapper width-110">
+                           <!-- <div class="greeting">
+                               <div class="row">
+                                   <div class="col-md-12">
+                                        <p class="f-48">
+                                            <span class="username blue-color f-24 pt-4">Hello Zoba!</span>
+                                            <span class="time pull-right blue-color f-24">The time is <span class="f-48 pl-3">8:23:48 AM</span></span>
+                                        </p>
+                                        <hr>
+                                        
+                                   </div>
+
+                               </div>
+                           </div> -->
+<style>
+    .numbers{
+        color:  rgb(56, 91, 141);
+        font-family: Lato;
+        font-size: 24px;
+        
+    }
+
+    .fee{
+        font-family: Khula;
+        font-size: 10px;
+        color: #3B3B3B;
+    }
+
+    .imo{
+        padding-left: 60px !important;
+    }
+
+    .oyo{
+
+    }
+</style>
+
+                            <div class="admin-components mt-4">
+                               <img src="img/Vector.svg" alt=""> <span class="fee">STUDENT FEES</span>
+                              <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body numbers" style="height:100px">
+                                              <h6 class="">Invoiced</h6>
+                                             #2,300,000.00
+                                             <img src="img/Group 26.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body numbers" style="height:100px">
+                                                <h6 class="">Recieved</h6>
+                                                #1,700,000.00
+                                                <img src="img/Group 27.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
+                                            </div>
+                                          </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-body numbers" style="height:100px">
+                                              <h6 class="">Pending</h6>
+                                                #600,000.00
+                                                <img src="img/Group (1).svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
+                                            </div>
+                                          </div>
+                                    </div>
+                              </div>
+                            </div>
+                            <!-- <div class="element-container mt-75">
+                                <div class="row">
+                                    <div class="col-md-6"> -->
+
+<style>
+#calendar{
+    margin-left: 3%;
+    margin-right: auto;
+    width: 300px;
+    font-family: 'Lato', sans-serif;
+  }
+  #calendar_weekdays div{
+    display:inline-block;
+    vertical-align:top;
+  }
+  #calendar_content, #calendar_weekdays, #calendar_header{
+    position: relative;
+    width: 320px;
+    overflow: hidden;
+    float: left;
+    z-index: 10;
+  }
+  #calendar_weekdays div, #calendar_content div{
+    width:40px;
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFFFFF;
+    color: #787878;
+  }
+  #calendar_content{
+    -webkit-border-radius: 0px 0px 12px 12px;
+    -moz-border-radius: 0px 0px 12px 12px; 
+    border-radius: 0px 0px 12px 12px;
+  }
+  #calendar_content div{
+    float: left;
+  }
+  #calendar_content div:hover{
+    background-color: #F8F8F8;
+  }
+  #calendar_content div.blank{
+    background-color: #E8E8E8;
+  }
+  #calendar_header, #calendar_content div.today{
+    zoom: 1;
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+  }
+  #calendar_content div.today{
+    color: #FFFFFF;
+  }
+  #calendar_header{
+   width: 94%;
+    height: 37px;
+    text-align: center;
+    background-color: #FF6860;
+    padding: 18px 0;
+    -webkit-border-radius: 12px 12px 0px 0px;
+    -moz-border-radius: 12px 12px 0px 0px; 
+    border-radius: 12px 12px 0px 0px;
+  }
+  #calendar_header h1{
+    font-size: 1.5em;
+    color: #FFFFFF;
+    float:left;
+    width:70%;
+  }
+  i[class^=icon]{
+    color: #FFFFFF;
+    float: left;
+    width:15%;
+    border-radius: 50%;
+    margin-top: -3em;
+    font-size: 24px;
+  }
+
+  .mij{
+      padding-right: 0;
+  }
+
+  .card-deck{
+      max-width: 100%;
+  }
+
+  .side{
+      font-size: 10px;
+      font-family: Khula;
+      color: #BDBDBD;
+      
+  }
+
+  .wow{
+      border-top: #FFFFFF;
+  }
+ </style>
+                                   
+                        <div class="row mt-5">
+                             <div class="col-md-8">
+                                    <img src="img/analysis.svg" alt=""> <span class="fee">STUDENT PERFORMANCE</span><br>
+                                    <div class="card chart-card py-3 ">
+                                        <canvas class="my-4" id="lChart" width="200" height="77"></canvas>
+                                    </div>
+                             </div>
+
+                               
+                             <div class="col-md-4">
+                                    <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                    <div class="mij rounded p-0">
+                                            <div class="card">
+                                                    <div class="card-body numbers" style="height:100px" >
+                                                      <h6 class="side">STUDENTS</h6>
+                                                         50,000
+                                                     <img src="img/Group 26.2.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                                    </div>
+                                                  </div>
+                                                <br>
+                                                  <div class="card">
+                                                        <div class="card-body numbers" style="height:100px">
+                                                          <h6 class="side">PARENTS</h6>
+                                                         15,000
+                                                         <img src="img/Group 28.1.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                                        </div>
+                                                      </div>
+                                                <br>   
+                                                      <div class="card">
+                                                            <div class="card-body numbers" style="height:100px">
+                                                              <h6 class="side">TEACHERS</h6>
+                                                             5,000
+                                                             <img src="img/Group 26.3.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                                            </div>
+                                                    </div>
+                                    </div>
+                                </div>
+                        </div>
+<!-- blubic second table -->
+                           
+                          <div class="row mt-4">
+                                <div class="col-md-4 ">
+                                        <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                    <div class="card ">
+                                        <div class="card-body numbers" style="height:100px" >
+                                          <h6 class="side">STUDENTS</h6>
+                                             94.6 %
+                                         <img src="img/Group 26.2.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                            <div class="card-body wow numbers" style="height:100px">
+                                              <h6 class="side">PARENTS</h6>
+                                             6 %
+                                             <img src="img/Group 28.1.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                            </div>
+                                          </div>
+                    
+                                </div>
+ 
+                                <div class="col-md-8 mt-4">
+                                        <div class="card ">
+                                                <div class="" style="height:201px" >
+                                                        <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >NAME</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >CLASS</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100 ">NUMBER OF DAYS ABSENT</th>
+                                                                    <th scope="col"></th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                    <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                    <td class="three">3</td>
+                                                                    <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                        <td>3</td>
+                                                                        <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                        <td>3</td>
+                                                                     <a href="#"><td style="font-size:10px; font-weight:bold; font-family:Khula;color:#1583C7">VIEW CONTACT DETAILS</td></a>  
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                </div>
+                                              </div>
+                                </div>
+
+                          </div>
+                    
+                          <div class="row mt-4">
+                                <div class="col-md-4 ">
+                                        <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                    <div class="card ">
+                                        <div class="card-body numbers" style="height:100px" >
+                                          <h6 class="side">STUDENTS</h6>
+                                             50,000
+                                         <img src="img/Group 26.2.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                        </div>
+                                      </div>
+                                      <div class="card">
+                                            <div class="card-body wow numbers" style="height:100px">
+                                              <h6 class="side">PARENTS</h6>
+                                             15,000
+                                             <img src="img/Group 28.1.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                            </div>
+                                          </div>
+                    
+                                </div>
+ 
+                                <div class="col-md-8 mt-4">
+                                        <div class="card ">
+                                                <div class="" style="height:201px" >
+                                                        <table class="table">
+                                                                <thead>
+                                                                  <tr>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >NAME</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >CLASS</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100 ">NUMBER OF DAYS ABSENT</th>
+                                                                    <th scope="col"></th>
+                                                                  </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                    <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                    <td class="three">3</td>
+                                                                    <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                        <td>3</td>
+                                                                        <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
+                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
+                                                                        <td>3</td>
+                                                                     <a href="#"><td style="font-size:10px; font-weight:bold; font-family:Khula;color:#1583C7">VIEW CONTACT DETAILS</td></a>  
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table>
+                                                </div>
+                                              </div>
+                                </div>
+
+                          </div>
+                        
+
+                            <!-- <div class="card-deck mt-75">
+                                   
+                               
+                               
+                            </div> -->
+
+                            <div class="element-container mt-112">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="f-24 blue-color">Awaiting Approval</p>
+                                        <div class="table-responsive tb-scroll">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <td class="fw-700">STAFF ID</td>
+                                                    <td class="fw-700">APPROVAL FOR</td>
+                                                    <td class="fw-700">REASON</td>
+                                                    <td class="fw-700">APPROVAL FROM</td>
+                                                    <td class="fw-700">STATUS</td>
+                                                </thead>
+                                                    <tbody>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Maternity Leave</td>
+                                                            <td>HOD ICT</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Weekly Report</td>
+                                                            <td>HRM</td>
+                                                            <td class="">
+                                                                 <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="pending" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="approved" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Compulsory Yearly Leave</td>
+                                                            <td>CEO</td>
+                                                            <td class="">
+                                                                <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="pending" class="text-danger">Pending</option>
+                                                                    <option value="approved" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Monthly Report</td>
+                                                            <td>HOD Finance</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Maternity Leave</td>
+                                                            <td>HOD ICT</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Weekly Report</td>
+                                                            <td>HRM</td>
+                                                            <td class="">
+                                                                 <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Compulsory Yearly Leave</td>
+                                                            <td>CEO</td>
+                                                            <td class="">
+                                                                <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Monthly Report</td>
+                                                            <td>HOD Finance</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!--JS, Popper.js, and jQuery  -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
+        <!-- <script src="Assets/plugins/moment/moment.js"></script> -->
+        <!-- <script src="js/jquery/jquery-1.9.0.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/script.js"></script>
+           
+        <script>
+      $(function(){function c(){p();var e=h();var r=0;var u=false;l.empty();while(!u){if(s[r]==e[0].weekday){u=true}else{l.append('<div class="blank"></div>');r++}}for(var c=0;c<42-r;c++){if(c>=e.length){l.append('<div class="blank"></div>')}else{var v=e[c].day;var m=g(new Date(t,n-1,v))?'<div class="today">':"<div>";l.append(m+""+v+"</div>")}}var y=o[n-1];a.css("background-color",y).find("h1").text(i[n-1]+" "+t);f.find("div").css("color",y);l.find(".today").css("background-color",y);d()}function h(){var e=[];for(var r=1;r<v(t,n)+1;r++){e.push({day:r,weekday:s[m(t,n,r)]})}return e}function p(){f.empty();for(var e=0;e<7;e++){f.append("<div>"+s[e].substring(0,3)+"</div>")}}function d(){var t;var n=$("#calendar").css("width",e+"px");n.find(t="#calendar_weekdays, #calendar_content").css("width",e+"px").find("div").css({width:e/7+"px",height:e/11+"px","line-height":e/7+"px"});n.find("#calendar_header").css({height:e*(1/10)+"px"}).find('i[class^="icon"]').css("line-height",e*(1/7)+"px")}function v(e,t){return(new Date(e,t,0)).getDate()}function m(e,t,n){return(new Date(e,t-1,n)).getDay()}function g(e){return y(new Date)==y(e)}function y(e){return e.getFullYear()+"/"+(e.getMonth()+1)+"/"+e.getDate()}function b(){var e=new Date;t=e.getFullYear();n=e.getMonth()+1}var e=480;var t=2013;var n=9;var r=[];var i=["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];var s=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];var o=["#16a085","#1abc9c","#c0392b","#27ae60","#FF6860","#f39c12","#f1c40f","#e67e22","#2ecc71","#e74c3c","#d35400","#2c3e50"];var u=$("#calendar");var a=u.find("#calendar_header");var f=u.find("#calendar_weekdays");var l=u.find("#calendar_content");b();c();a.find('i[class^="icon"]').on("click",function(){var e=$(this);var r=function(e){n=e=="next"?n+1:n-1;if(n<1){n=12;t--}else if(n>12){n=1;t++}c()};if(e.attr("class").indexOf("left")!=-1){r("previous")}else{r("next")}})})
+        </script>
+
+        <!-- Graphs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        <script>
+        var ctx = document.getElementById("lChart");
+        var lChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            datasets: [{
+              data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+              lineTension: 0,
+              backgroundColor: 'transparent',
+              borderColor: '#007bff',
+              borderWidth: 4,
+              pointBackgroundColor: '#007bff'
+            }]
+          },
+          options: {
+            scales: {
+              yAxes: [{
+                ticks: {
+                  beginAtZero: false
+                }
+              }]
+            },
+            legend: {
+              display: false,
+            }
+          }
+        });
+      </script>
+
+
+        <!-- <script src="Assets/plugins/Calendar/calendar.js"></script> -->
+        <script>
+              new Chart(document.getElementById("myChart"), {
+    type: 'bar',
+    data: {
+      labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
+      datasets: 
+        [
+          {
+            label: ["Present"],
+            backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+            data: [65, 59, 75, 81, 56, 55, 40]
+          },
+             {
+                label: 'Absent',  
+              backgroundColor: ["#EB5757"]
+
+              },
+
+              {
+                label: 'Late',        
+              backgroundColor: ["#FED766"]
+
+              },
+              //and the next one
+              
+              {
+                label: 'Out of Station',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'Early Departure',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'March 2018',        
+                backgroundColor: ["#FFFFFF"],
+                borderColor: ["#FFFFFF"],
+                // fontStyle : "Bold"
+              }            
+        ]
+    },
+    
+    options: {
+      // legend: { display: false },
+      scales: {
+        yAxes: [{
+            ticks: {
+                // beginAtZero: true
+                display: true
+            }
+        }],
+       
+         xAxes: [{
+    //         // Change here
+            barPercentage: 1
+        }]
+      }
+    }
+});
+  $(document).ready(function(){
+
+
+  });       
+
+
+
+                       
+        </script>
+        
+    </body>
+</html>
