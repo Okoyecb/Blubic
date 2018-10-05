@@ -56,6 +56,10 @@
                .reports::after{
                    margin-left: 40px !important;
                }
+
+               body{
+                   width:1440px !important;
+               }
               
         </style>
         <main>
@@ -279,8 +283,8 @@
                                         <div class="card">
                                             <div class="card-body numbers" style="height:100px">
                                               <h6 class="">Invoiced</h6>
-                                             #2,300,000.00
-                                             <img src="img/Group 26.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
+                                              &#8358;2,300,000.00
+                                             <img src="img/Group 26.svg" alt="" class="imo" height="60px" style="margin-top:-30px;">
                                             </div>
                                           </div>
                                     </div>
@@ -289,8 +293,8 @@
                                         <div class="card">
                                             <div class="card-body numbers" style="height:100px">
                                                 <h6 class="">Recieved</h6>
-                                                #1,700,000.00
-                                                <img src="img/Group 27.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
+                                            &#8358;1,700,000.00
+                                                <img src="img/Group 27.svg" alt="" class="imo" height="60px" style="margin-top:-30px;">
                                             </div>
                                           </div>
                                     </div>
@@ -299,7 +303,7 @@
                                         <div class="card">
                                             <div class="card-body numbers" style="height:100px">
                                               <h6 class="">Pending</h6>
-                                                #600,000.00
+                                              &#8358;600,000.00
                                                 <img src="img/Group (1).svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:20px;">
                                             </div>
                                           </div>
@@ -401,19 +405,26 @@
   .wow{
       border-top: #FFFFFF;
   }
+
+  #curve_chart{
+ height: 320px; 
+}
  </style>
                                    
                         <div class="row mt-5">
                              <div class="col-md-8">
                                     <img src="img/analysis.svg" alt=""> <span class="fee">STUDENT PERFORMANCE</span><br>
                                     <div class="card chart-card py-3 ">
-                                        <canvas class="my-4" id="lChart" width="200" height="77"></canvas>
+                                        <!-- <canvas class="my-4" id="chart-container" width="00" height="77"></canvas> -->
+                                        <div id="curve_chart" ></div>
                                     </div>
                              </div>
 
                                
                              <div class="col-md-4">
-                                    <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                    <div class="">
+                                            <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                       </div> 
                                     <div class="mij rounded p-0">
                                             <div class="card">
                                                     <div class="card-body numbers" style="height:100px" >
@@ -445,7 +456,9 @@
                            
                           <div class="row mt-4">
                                 <div class="col-md-4 ">
-                                        <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                        <div class="">
+                                                <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
+                                           </div> 
                                     <div class="card ">
                                         <div class="card-body numbers" style="height:100px" >
                                           <h6 class="side">STUDENTS</h6>
@@ -469,9 +482,9 @@
                                                         <table class="table">
                                                                 <thead>
                                                                   <tr>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >NAME</th>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >CLASS</th>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100 ">NUMBER OF DAYS ABSENT</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600" >NAME</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600" >CLASS</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600"">NUMBER OF DAYS ABSENT</th>
                                                                     <th scope="col"></th>
                                                                   </tr>
                                                                 </thead>
@@ -501,58 +514,166 @@
                                 </div>
 
                           </div>
-                    
+                    <style>
+                        .btn-sm{
+                            width: 108px;
+                            height: 32px;
+                            line-height: 10px;
+                        }
+                    </style>
+
                           <div class="row mt-4">
-                                <div class="col-md-4 ">
-                                        <img src="img/analytics (1).svg" alt=""> <span class="fee">GENERAL STATISTICS</span><br>
-                                    <div class="card ">
-                                        <div class="card-body numbers" style="height:100px" >
-                                          <h6 class="side">STUDENTS</h6>
-                                             50,000
-                                         <img src="img/Group 26.2.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
+                                <div class="col-md-6 ">
+                                        <div class="">
+                                                <img src="img/debt.svg" alt=""> <span class="fee">DEBTORS</span><br>
+                                           </div>
+                                      
+                                      <div class="card"> 
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600 ">CLASS</th>
+                                                <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600">STUDENT NO</th>
+                                                <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600">AMOUNT</th>
+                                                <th scope="col" style="font-size:10px; font-weight: 100"><button type="button" class="btn btn-sm btn-primary"><span style="font-size:9px; line-height: 10px;">Remind All</span></button></th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                               <td style="font-size:12px; color: #31393C; line-height: 19px;">JSS1</td>
+                                                <td style="font-size:12px; color: #31393C; line-height: 19px; text-align: center">23</td>
+                                                <td style="font-size:14px; color: #2D74DA; line-height: 17px; text-align: left; font-weight:500">&#8358;4,500</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td style="font-size:12px; color: #31393C; line-height: 19px;">JSS2</td>
+                                                <td style="font-size:12px; color: #31393C; line-height: 19px; text-align: center">11</td>
+                                                <td style="font-size:14px; color: #2D74DA; line-height: 17px; text-align: left; font-weight:500">&#8358;23,500</td>
+                                                <td scope="col" style="font-size:10px; font-weight: 100"><button type="button" class="btn btn-sm btn-primary"><span style="font-size:9px; line-height: 10px;">Send Reminder</span></button></th>
+                                              </tr>
+                                              <tr>
+                                                <td style="font-size:12px; color: #31393C; line-height: 19px;">JSS3</td>
+                                                <td style="font-size:12px; color: #31393C; line-height: 19px; text-align: center">56</td>
+                                                <td style="font-size:14px; color: #2D74DA; line-height: 17px; text-align: left; font-weight:500">&#8358;11,200</td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                      </div>
+                                   <br>
+
+                                   <div class="">
+                                        <img src="img/megaphone (1).svg" alt=""> <span class="fee">ANNOUNCEMENT</span><br>
+                                   </div>
+                                  
+                                   <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title" style="font-size:18px; color:#3B3B3B; line-height:29px; text-align:left;">Computer lab lockdown</h5>
+                                          <p class="card-text" style="color:#BDBDBD; font-size:12px; line-height:19px; letter-spacing:-0.8px; text-align:left">Hello Students, The computer Lab will be shutdown this thursday for routine maintainace. Sorry for the inconviniences and if you have any question feel free..</p><hr>
+                                          <h5 class="card-title" style="font-size:18px; color:#3B3B3B; line-height:29px; text-align:left;">Class Social</h5>
+                                          <p class="card-text" style="color:#BDBDBD; font-size:12px; line-height:19px; letter-spacing:-0.8px; text-align:left">Hello Students, The computer Lab will be shutdown this thursday for routine maintainace. Sorry for the inconviniences and if you have any question feel free..</p><hr>
+                                          <h5 class="card-title" style="font-size:18px; color:#3B3B3B; line-height:29px; text-align:left;">Extended Mid-term Break</h5>
+                                          <p class="card-text" style="color:#BDBDBD; font-size:12px; line-height:19px; letter-spacing:-0.8px; text-align:left">Hello Students, The computer Lab will be shutdown this thursday for routine maintainace. Sorry for the inconviniences and if you have any question feel free..</p>
                                         </div>
                                       </div>
-                                      <div class="card">
-                                            <div class="card-body wow numbers" style="height:100px">
-                                              <h6 class="side">PARENTS</h6>
-                                             15,000
-                                             <img src="img/Group 28.1.svg" alt="" class="imo" height="60px" style="margin-top:-30px;margin-left:50px;">
-                                            </div>
-                                          </div>
-                    
                                 </div>
- 
-                                <div class="col-md-8 mt-4">
-                                        <div class="card ">
-                                                <div class="" style="height:201px" >
+                               
+                                <div class="col-md-6">
+                                        <img src="img/buy.svg" alt=""> <span class="fee">RECENT TRANSACTIONS</span><br>
+                                    <div class="card ">
+                                                <div class="" style="height:610px" >
                                                         <table class="table">
                                                                 <thead>
                                                                   <tr>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >NAME</th>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100" >CLASS</th>
-                                                                    <th scope="col" style="font-size:10px; font-weight: 100 ">NUMBER OF DAYS ABSENT</th>
-                                                                    <th scope="col"></th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600 ">BASIC INFO</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600 ">NOTE</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600 ">ENTERED BY</th>
+                                                                    <th scope="col" style="font-size:10px; font-weight: 100; text-align: left; line-height: 16px; color:#3B3B3B; font-weight:600 ">AMOUNT</th>
                                                                   </tr>
                                                                 </thead>
                                                                 <tbody>
                                                                   <tr>
-                                                                    <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
-                                                                    <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
-                                                                    <td class="three">3</td>
-                                                                    <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
                                                                   </tr>
                                                                   <tr>
-                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
-                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
-                                                                        <td>3</td>
-                                                                        <td style="font-size:10px; font-weight:bold; font-family:Khula; color:#1583C7">VIEW CONTACT DETAILS</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
                                                                   </tr>
                                                                   <tr>
-                                                                        <td scope="row" style="font-size:12px; font-family:Khula; color: #31393C;">Salihu,Attah Chigboza</td>
-                                                                        <td style="font-size:12px; color: #31393C;">JSS 1 Happiness</td>
-                                                                        <td>3</td>
-                                                                     <a href="#"><td style="font-size:10px; font-weight:bold; font-family:Khula;color:#1583C7">VIEW CONTACT DETAILS</td></a>  
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#FB5D5D; line-height: 17px; font-weight:600 ">-&#8358;4500</td>
                                                                   </tr>
+                                                                     <tr>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                        <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                        <td style="font-size:14px; color:#FB5D5D; line-height: 17px; font-weight:600 ">-&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                        <td style="font-size:14px; color:#FB5D5D; line-height: 17px; font-weight:600 ">-&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                        <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                        <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    
+                                                                    <tr>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+                                                                    
+                                                                     <tr>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 22px;">Plumbing</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">material & labour</td>
+                                                                    <td style="font-size:14px; color:#31393C; line-height: 16px;">Akin Osa</td>
+                                                                    <td style="font-size:14px; color:#17BF5F; line-height: 17px; font-weight:600 ">+&#8358;4500</td>
+                                                                    </tr>
+                                                                    <tr>
+
                                                                 </tbody>
                                                               </table>
                                                 </div>
@@ -685,15 +806,44 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
         <!-- <script src="Assets/plugins/moment/moment.js"></script> -->
         <!-- <script src="js/jquery/jquery-1.9.0.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script> -->
+        <!-- Step 1 - Including the fusioncharts core library -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        
         <script src="js/script.js"></script>
            
         <script>
       $(function(){function c(){p();var e=h();var r=0;var u=false;l.empty();while(!u){if(s[r]==e[0].weekday){u=true}else{l.append('<div class="blank"></div>');r++}}for(var c=0;c<42-r;c++){if(c>=e.length){l.append('<div class="blank"></div>')}else{var v=e[c].day;var m=g(new Date(t,n-1,v))?'<div class="today">':"<div>";l.append(m+""+v+"</div>")}}var y=o[n-1];a.css("background-color",y).find("h1").text(i[n-1]+" "+t);f.find("div").css("color",y);l.find(".today").css("background-color",y);d()}function h(){var e=[];for(var r=1;r<v(t,n)+1;r++){e.push({day:r,weekday:s[m(t,n,r)]})}return e}function p(){f.empty();for(var e=0;e<7;e++){f.append("<div>"+s[e].substring(0,3)+"</div>")}}function d(){var t;var n=$("#calendar").css("width",e+"px");n.find(t="#calendar_weekdays, #calendar_content").css("width",e+"px").find("div").css({width:e/7+"px",height:e/11+"px","line-height":e/7+"px"});n.find("#calendar_header").css({height:e*(1/10)+"px"}).find('i[class^="icon"]').css("line-height",e*(1/7)+"px")}function v(e,t){return(new Date(e,t,0)).getDate()}function m(e,t,n){return(new Date(e,t-1,n)).getDay()}function g(e){return y(new Date)==y(e)}function y(e){return e.getFullYear()+"/"+(e.getMonth()+1)+"/"+e.getDate()}function b(){var e=new Date;t=e.getFullYear();n=e.getMonth()+1}var e=480;var t=2013;var n=9;var r=[];var i=["JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER"];var s=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];var o=["#16a085","#1abc9c","#c0392b","#27ae60","#FF6860","#f39c12","#f1c40f","#e67e22","#2ecc71","#e74c3c","#d35400","#2c3e50"];var u=$("#calendar");var a=u.find("#calendar_header");var f=u.find("#calendar_weekdays");var l=u.find("#calendar_content");b();c();a.find('i[class^="icon"]').on("click",function(){var e=$(this);var r=function(e){n=e=="next"?n+1:n-1;if(n<1){n=12;t--}else if(n>12){n=1;t++}c()};if(e.attr("class").indexOf("left")!=-1){r("previous")}else{r("next")}})})
         </script>
+<!-- Chart -->
+
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Sales', 'Expenses'],
+        ['2004',  1000,      400],
+        ['2005',  1170,      460],
+        ['2006',  660,       1120],
+        ['2007',  1030,      540]
+      ]);
+
+      var options = {
+        title: 'Company Performance',
+        curveType: 'function',
+        legend: { position: 'bottom' }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+      chart.draw(data, options);
+    }
+  </script>
 
         <!-- Graphs -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
         <script>
         var ctx = document.getElementById("lChart");
         var lChart = new Chart(ctx, {
@@ -722,11 +872,11 @@
             }
           }
         });
-      </script>
+      </script> -->
 
 
         <!-- <script src="Assets/plugins/Calendar/calendar.js"></script> -->
-        <script>
+        <!-- <script>
               new Chart(document.getElementById("myChart"), {
     type: 'bar',
     data: {
@@ -793,10 +943,12 @@
 
   });       
 
-
+ -->
 
                        
         </script>
+
+        
         
     </body>
 </html>
